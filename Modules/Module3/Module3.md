@@ -96,24 +96,26 @@ print(type(age))
 
 What is the difference between "42" and 42.
 
- - Answer:
+ - Answer: The first is a stream and the other one is a integer.
 
 Define the boolean operators: >, <, ==, >=, <=
 
- - Answer:
+ - Answer: (>)= Greater than (<)= Less than (==)= equals (>=)= greater or equal than (<=)= less or equal than.
 
 How do you address an index in an list? Write a python code that assigns 34 to a new variable by accessing the value stored in:  
         arr = [4, 3, -1, 4, 34]
 
- - Answer:
+ - Answer: >>> arr = 4, 3, -1, 4, 34
+>>> arr[4]
+34
 
 What is the first index of a list? Why?
 
- - Answer:
+ - Answer: the first number it start's with is 0
 
 Provide an original example of a null value. It must prove your understanding of the concept.
 
- - Answer:
+ - Answer:  If I don't have puppys then there is a lack of value also called a null value.
 
 Type down any class notes below this sentence:
 
