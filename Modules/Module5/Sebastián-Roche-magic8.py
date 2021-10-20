@@ -1,8 +1,8 @@
-import random
-
-    print("Welcome")
+  print("Welcome")
     Name=input("What is your name?") 
     print("What would you like to know?")
+
+import random
 
     random_number = random.randint(1, 12)
 if(random_number) == 1:
@@ -33,9 +33,9 @@ elif(random_number == 12):
 
 
     Yes - definitly
-    It is decidedly so.
+    It is decidedly, so.
     Without a doubt
-    Reply hazy, tray again.
+    Reply hazy, try again.
     Ask again later
     Better not tell you know.
     My sources say NO.
