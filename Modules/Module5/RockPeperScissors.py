@@ -15,7 +15,7 @@ elif(playerChoice == "rock" and computerChoice == "scissors"):
 elif(playerChoice == "rock" and computerChoice == "paper"):
     print("You just took the L")
 elif(playerChoice == "scissor" and computerChoice == "paper"):
-    print("Scissor cuts the paper. You just beated the hell out of that guy!")
+    print("Scissor cuts the paper. You just beated that guy")
 elif(playerChoice == "scissor" and computerChoice == "rock"):
     print("You just took the L")
 elif(playerChoice == "paper" and computerChoice == "rock"):
