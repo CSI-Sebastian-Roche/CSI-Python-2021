@@ -72,4 +72,18 @@ with open(myOutputFilePath, "w") as outfile:
     json.dump([data.__dict__ for data in myDataSet], outfile)
     json.dump(myDataSet[0].__dict__, outfile)
 
+    for e in experimentJson:
+        ExperimentalData(**e).run()
+
     # ProjectileFunction(experimentalData)
+
+    #Parallel list
+    planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]
+    g_m2 = [3.7, 8.7, 9.81, 3.711, 24.79, 10.44, 8.69, 11.15]
+
+
+ExperimentalData ("MP9", "9x19mm", "9x19mm RIP", 381, "Coliseum Tower Residences", 259, 9.81),
+ExperimentalData ("MP9-N", "9x19mm", "9x19mm Pst gzh", 381, "Coliseum Tower Residences", 259, 3.7),
+ExperimentalData ("MPX", "9x19mm", "9x19mm Pst gzh", 381, "Coliseum Tower Residences", 259, 8.7),
+ExperimentalData ("P90", "5.7x28mm FN", "5.7x28mm SS190", 381, "Coliseum Tower Residences", 259, 3.711)
+
