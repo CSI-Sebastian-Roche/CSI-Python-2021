@@ -1,5 +1,5 @@
 import random
-word_list = ["San Juan", "Ponce", "Caguas", "Cabo Rojo", "Humacao", "Viequez", "Moca", "Mayagüez", "San Sebastian", "Cidra"]
+word_list = ["San Juan", "Ponce", "Caguas", "Cabo Rojo", "Humacao", "Vieques", "Moca", "Mayagüez", "San Sebastian", "Cidra"]
 
 def display_hangman(tries):
     word = random.choice(word_list)
