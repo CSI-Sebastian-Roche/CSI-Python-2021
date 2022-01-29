@@ -30,13 +30,41 @@ def display_hangman(tries):
                         else:
                             print("Good Job!", guess, "is in the word")
                             guessed_letters.append(guess)
+                            wold_as_list = list(wordd_completion)
+                            indices = [i for i, leter in enumerate(word) if letter == guess]
+                            for index in indices: 
+                                word_as_list[index] = guess
+                                word_completion == "".join(word_as_list)
+                                if "_" not in word_completion:
+                                    guessed = True
+                    elif len(guess) == len(word) and guess.isalpha():
+                        if guess in guessed_letters:
+                            print("You already tried", guess, "!")
+                            elif guess != word:
+                                print(guess, "Is not the word")
+                                tries -= 1
+                                guessed_word.append(guess)
+                                else:
+                                    guessed = True
+                                    word_completion = word 
+                                else:
+                                    print("Invalid input")
+                                    print(display_hangman(tries))
+                                    print(word_completion)
+                                    print("\n")
+
+                                    if guessed:
+                                        print"Good Job, you guessed the word!!! :)"
+                                        else:
+                                            print("Im sorry, but you ran out of tries. The word was" + word + "Maybe nesxt time!")
+
 
 
 
 
         ))
 
-
+def display_hangman(tries):
     stages = [ """
                     --------
                     |   |
@@ -103,3 +131,17 @@ def display_hangman(tries):
 
 
     ]
+    return stages[tries]
+    def main():
+        word = get_word(word_list)
+        play(word)
+        while input("Again? (Y/N)" ). upper() == "Y":
+            word = get_word(word_list)
+            play(word)
+
+
+            if _name_ == "__main__":
+                main()
+
+
+                
